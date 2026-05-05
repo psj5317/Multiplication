@@ -14,10 +14,10 @@ public class MyStudent
         Scanner scan = new Scanner(System.in);
         
         // 학생 개체 생성
-        Student Jenna = new Student("Jenna",1);
-        Student James = new Student("James",2);
-        Student John = new Student("John",3);
-        Student Maria = new Student("Maria",4);
+        Student Jenna = new Student("Jenna","R005");
+        Student James = new Student("James","R009");
+        Student John = new Student("John","R010");
+        Student Maria = new Student("Maria","R029");
         
         System.out.println("학생 이름을 입력해 주세요");
         String name = scan.next();
