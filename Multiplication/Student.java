@@ -18,14 +18,20 @@ public class Student {
 
     public String answerCalculate() {
         Scanner scan = new Scanner(System.in);
-        int dan = scan.nextInt();
+        
+        // 프롬포트 출력
+        System.out.println("물어볼 단 수를 입력하세요.");
+        // 단수 입력
+        int number = scan.nextInt();
+        System.out.println(number + "단을 답해주세요.");
 
         Calculator cal = new Calculator();
-        cal.operand = dan;
-
+        cal.operand = number;
+        
+        // 구구단 계산
         String result = "";
         for (int i = 1; i < 10; i++) {
-            result += cal.operand + "x" + i + "=" + cal.calculate() * i;  // ✅ * i
+            result += cal.operand + "x" + i + "=" + cal.calculate() * i; 
             if (i < 9) {
                 result += "  ";
             }
