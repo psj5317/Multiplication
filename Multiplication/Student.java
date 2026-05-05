@@ -19,11 +19,13 @@ public class Student {
 
     public String answerCalculate() {
         Scanner scan = new Scanner(System.in);
-
+        int number;
+        
         // 프롬포트 출력
         System.out.println("물어볼 단 수를 입력하세요.");
+        
         // 단수 입력
-        int number = scan.nextInt();
+        number = scan.nextInt();
         System.out.println(number + "단을 답해주세요.");
 
         Calculator cal = new Calculator();
