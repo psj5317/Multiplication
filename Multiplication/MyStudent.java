@@ -11,10 +11,23 @@ public class MyStudent
 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Student jenna = new Student("jenna");
-        String result = jenna.answerCalculate();
+        Student Jenna = new Student("Jenna",1);
+        Student James = new Student("James",2);
+        Student Sara = new Student("Sara",1);
+        Student Tom = new Student("Tom",1);
         
-        System.out.print("단을 답해주세요~");
-        System.out.println(result);
+        
+        
+        System.out.println("Jenna에게 질문하세요:");
+        System.out.println(Jenna.answerCalculate());
+        
+        System.out.println("Sara에게 질문하세요:");
+        System.out.println(Sara.answerCalculate());
+        
+        System.out.println("Tom에게 질문하세요:");
+        System.out.println(Tom.answerCalculate());
+        
+        System.out.println("James에게 질문하세요:");
+        System.out.println(James.answerCalculate());
     }
 }
