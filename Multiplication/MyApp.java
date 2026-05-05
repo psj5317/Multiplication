@@ -9,30 +9,47 @@ import java.util.Scanner;
  */
 public class MyApp
 {   
-    
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        //물어볼 학생 변수
+        String name;
+        boolean finish = true;
         
         // 학생 개체 생성
         Student Jenna = new Student("Jenna","R005");
         Student James = new Student("James","R010");
         Student John = new Student("John","R009");
         Student Maria = new Student("Maria","R029");
-        
-        System.out.println("학생 이름을 입력해 주세요");
-        String name = scan.next();
-        
-        if(name.equals("Jenna")) {
-            System.out.println("Jenna : " + Jenna.answerCalculate());
-        } else if (name.equals("James")) {
-            System.out.println("James : " + James.answerCalculate());
-        } else if (name.equals("John")) {
-            System.out.println("John : " + John.answerCalculate());
-        } else if (name.equals("Maria")) {
-            System.out.println("Maria : " + Maria.answerCalculate());
-        } else {
-            System.out.println("학생 이름을 확인해 주세요.");
+
+        while(finish){
+            System.out.println("학생 이름을 입력해 주세요");
+            name = scan.next();
+            switch (name){
+                    case("Jenna"):
+                    System.out.println("Jenna : " + Jenna.answerCalculate());
+                    finish = false;
+                    break;
+                    
+                    case("James"):
+                    System.out.println("James : " + James.answerCalculate());
+                    finish = false;
+                    break;
+                    
+                    case("John"):
+                    System.out.println("John : " + John.answerCalculate());
+                    finish = false;
+                    break;
+                    
+                    case("Maria"):
+                    System.out.println("Maria : " + Maria.answerCalculate());
+                    finish = false;
+                    break;
+                    
+                    default:
+                        System.out.println("없는 학생입니다.");
+            } 
         }
-        
     }
 }
