@@ -2,16 +2,17 @@ package Multiplication;
 import java.util.Scanner;
 
 /**
- * Student 클래스의 설명을 작성하세요.
+ * 학생객체를 생성하는 클래스,
+ * 학생객체의 속성은 이름과 학번이며 동작은 구구단답변이다.
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2023320029정지후, 2023320012강성하, 2023320010박성준, 2023320006정준영)
+ * @version (2026.05.05)
  */
 public class Student {
     private String name;
-    private int studentId;
+    private String studentId;
 
-    public Student(String name, int studentId) {
+    public Student(String name, String studentId) {
         this.name = name;
         this.studentId = studentId;
     }
@@ -29,6 +30,6 @@ public class Student {
         cal.operand = number;
 
         // Calculator의 메소드를 호출하여 결과 반환
-        return cal.answerCalculate();
+        return cal.calculate();
     }
 }
